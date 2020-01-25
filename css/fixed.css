@@ -1,0 +1,278 @@
+/** TIPS: 
+1. The carousel shouldn't be in any other div, like for example div with class container. 
+2. You can align image position in classes bg1, bg2, bg3 using css background-position.
+*/
+
+/* Carousel 100% Fullscreen */
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-: 0px!important;
+  margin-right: 0px!important;
+}
+
+/*============= IMAGE SLIDER =============*/
+
+.carousel-item {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*---Change Carousel Transition Speed --*/
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: block;
+  transition: -webkit-transform 1.2s ease;
+  transition: transform 1.2s ease;
+  transition: transform 1.2s ease,-webkit-transform 1.2s ease;
+
+}
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+  body {
+      background:#f0f0f0;
+      font: 14px/20px Arial, San-Serif;
+      color: #555;
+      margin: 15; 
+    }
+    h1 {
+      text-align: center;
+      font-size: 180%;
+      line-height: 120%;
+      padding: 5% 0;
+    }
+    h2 {
+      text-decoration: underline;
+      line-height: 280%;
+      padding-left: 2%; 
+    }
+    h3 {
+      line-height: 110%;
+      padding: 5% 0;
+    }
+    p {
+      padding: 1%;
+    }
+    img {
+      text-align: center;
+      max-width: 100%;
+      height: 25PX;
+      width: auto;
+    }
+    /*Header Names*/
+    a {
+      color: #933333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /*Select color when pointed at*/
+    a hover {
+      color: #FFF;
+      text-decoration: underline;
+    }
+    header {
+      background:  #17202a ;
+      width: 100%;
+      height:90px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      opacity: 0.90;
+    }
+    #logo {
+      margin: 0px;
+      float: left;
+      width: 250px;
+      height: 88px;
+      background: url("file:///j:/UX/Web_Dev/images/menu1.png") no-repeat center;
+    }
+    nav {
+      float: right;
+      padding: 35px 20px 20px 0;
+    }
+    #menu-icon {
+      display: hidden;
+      width: 40px;
+      height: 40px;
+      background: url("file:///j:/UX/Web_Dev/images/5.png") center;
+      
+    }
+    a:hover#menu-icon {
+      border-radius: 4px 4px 0 0;
+    }
+    ul {
+      list-style: none;
+    }
+    nav ul li {
+      display: inline-block;
+      float: left;
+      padding: 10px;
+    }
+    .current {
+      color: #ffffff;
+      text-decoration: 
+    }
+    #doc {
+      margin: 40px 0;
+
+    }
+    #content {
+      margin: 0px;
+      max-width: 1140px;
+      margin-top: -100px;
+    }
+    .bootstrap {
+      max-width: 940px;
+      margin-top: 110px;
+    }
+    section {
+      width: 29%;
+      float: left;
+      margin: 2% 2%;
+      text-align: center;
+    }
+    .clear: both;
+    }
+    article {
+      float: left;
+      margin:  0 auto;
+      width: 50%;
+      height: auto;
+      padding: 4%;
+    }
+    aside {
+      float: right;
+      margin:  0 auto;
+      width: 35%;
+      height: auto;
+      padding: 3%;
+    }
+    ul.cyles li {
+      padding-left: 3%;
+    }
+    Footer { 
+      background: #333333;
+      width: 100%;
+      overflow: hidden;
+      opacity: 0.90;
+
+    }
+    footer , footer h2 {
+      color: #FFFfff;
+    }
+    footer p a {
+      color: #FFFfff;
+      text-decoration: none;
+    }
+    ul.social li {
+      display: inline;
+    }
+    ul.social li img {
+      height: 50px;
+    }
+    footer.second {
+      border-top: 1px solid #72da17;
+      background-color: #333333;
+      max-height: 50px;
+      text-align: center; 
+      opacity: 0.95;
+    }
+    /*--------------------Media!!!------------*/
+  @media screen and (max-width: 100%) {
+    body{
+      position: absolute;
+    }
+
+  }
+  @media screen and (max-width: 100%) {
+    header {
+      position: absolute;
+    }
+    #menu-icon {
+      display: inline-block;
+    }
+    nav ul, nav:active ul {
+      display: none;
+      position: absolute;
+      padding: 20px;
+      background: #405580;
+      border: 1px solid #FFF;
+      right: 20px;
+      top: 60px;
+      width: 50%;
+      border-radius: 2px 0 2px 2px;
+    }
+    nav ul, nav:active ul {
+      text-align: center;
+      width: 100px;
+      padding: 10px 0;
+      margin: 0;
+    }
+    nav:hover ul {
+      display: block;
+    }
+    section {
+      float: left;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    article {
+      float: left;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    aside {
+      float: left;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+}
+
+    h3 {
+  display: inline-block;
+  padding: 10px;
+  background: #10bcfd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+  h4 {
+  display: inline-block;
+  padding: 10px;
+  background: #10bcfd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+  h4{
+  display: inline-block;
+  padding: 6px;
+  background:   #17202a ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+  h1 { /*inside tab on the header*/
+  display: inline-block;
+  padding: 10px;
+  background:;  /*current blank*/
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+  }
+
+
+  
+  }
+
+}
